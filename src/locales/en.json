@@ -1,0 +1,96 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "history": "History",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Welcome to my portfolio",
+    "subtitle": "Frontend Developer",
+    "contentmain": {
+      "p1": "Hello! I am a modern web developer who creates interactive and attractive web applications.",
+      "p2": "My work is not just code, it is art, where technology and creativity merge into one.",
+      "p3": "I own such advanced tools as Vite, Vue and Tailwind, which allows me to create fast, efficient and responsive web applications. My approach is always an individual approach to each project, taking into account all the wishes and requirements of the customer. I create websites with animation that not only attract attention, but also make interaction with the site more interesting and memorable.",
+      "p4": "My experience also includes the creation of online stores on popular CMS, such as Shopware and WordPress. I know how to make your online store convenient, functional and attractive to customers. My goal is to create web applications that not only solve business problems, but also bring pleasure to users. I strive to ensure that each of my projects is unique and meets the highest quality standards.",
+      "p5": "If you are looking for a web developer who can turn your ideas into reality, contact me. I am always open to new projects and interesting challenges!"
+    }
+  },
+  "projects": {
+    "title": "Our Projects",
+    "readMore": "Read More",
+    "project1": {
+      "name": "Project 1",
+      "description": "Full description of project 1. Here can be detailed information about the project, its goals and results."
+    },
+    "project2": {
+      "name": "Project 2",
+      "description": "Full description of project 2. Detailed information about the development process, technologies used and results obtained."
+    },
+    "project3": {
+      "name": "Project 3",
+      "description": "Full description of project 2. Detailed information about the development process, technologies used and results obtained."
+    },
+    "project4": {
+      "name": "Project 4",
+      "description": "Full description of project 2. Detailed information about the development process, technologies used and results obtained."
+    },
+    "viewMore": "View More",
+    "noProjects": "No projects found"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "We are a team of professional developers with experience in creating complex web applications",
+    "mission": "Our Mission",
+    "missionText": "To create innovative solutions that help businesses grow and evolve",
+    "values": {
+      "title": "Our Values",
+      "innovation": "Innovation",
+      "quality": "Quality",
+      "reliability": "Reliability"
+    }
+  },
+  "history": {
+    "title": "Свяжитесь с нами",
+    "description": "У вас есть вопросы? Мы будем рады помочь!"    
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Have questions? We'd love to help!",
+    "form": {
+      "name": "Your Name",
+      "email": "Email",
+      "message": "Message",
+      "captcha": "Solve the equation",
+      "submit": "Send",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "An error occurred. Please try again later."
+    },
+    "validation": {
+      "required": "This field is required",
+      "email": "Please enter a valid email address",
+      "minLength": "Minimum length: {min} characters",
+      "maxLength": "Maximum length: {max} characters",
+      "captcha": "Incorrect answer"
+    },
+    "info": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "backToHome": "Back to Home",
+    "readMore": "Read More",
+    "close": "Close"
+  }
+} 

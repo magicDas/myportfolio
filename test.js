@@ -1,0 +1,1 @@
+console.log('Module type:', import.meta.url ? 'ES Modules' : 'CommonJS');
