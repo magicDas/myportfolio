@@ -4,6 +4,7 @@ import path from 'path'
 // import svg from 'vite-plugin-svg';
 
 export default defineConfig({
+  base: '/myportfolio/',
   plugins: [vue({
     template: {
       ssr: false // Отключаем SSR

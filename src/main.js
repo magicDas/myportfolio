@@ -1,8 +1,9 @@
 import { createApp } from 'vue'
 import { createI18n } from 'vue-i18n'
-import { VueReCaptcha } from 'vue-recaptcha-v3'
+// Удаляем или комментируем импорт reCAPTCHA
+// import { VueReCaptcha } from 'vue-recaptcha-v3'
 import App from '@/App.vue'
-import '@/assets/main.css'
+import '@/assets/styles/main.css'
 import router from '@/router'
 
 import en from '@/locales/en.json'
@@ -19,14 +20,14 @@ const i18n = createI18n({
 })
 
 const app = createApp(App)
-// Настройка reCAPTCHA
-app.use(VueReCaptcha, {
-  siteKey: import.meta.env.VITE_RECAPTCHA_SITE_KEY,
-  loaderOptions: {
-    useRecaptchaNet: true,
-    autoHideBadge: true
-  }
-})
+// Комментируем или удаляем настройку reCAPTCHA
+// app.use(VueReCaptcha, {
+//   siteKey: import.meta.env.VITE_RECAPTCHA_SITE_KEY,
+//   loaderOptions: {
+//     useRecaptchaNet: true,
+//     autoHideBadge: true
+//   }
+// })
 
 app.use(router)
 app.use(i18n)

@@ -19,41 +19,65 @@
   },
   "projects": {
     "title": "Our Projects",
-    "readMore": "Read More",
     "project1": {
       "name": "Project 1",
-      "description": "Full description of project 1. Here can be detailed information about the project, its goals and results."
+      "description": "Full description of project 1. Here can be detailed information about the project, its goals and results."      
     },
     "project2": {
-      "name": "Project 2",
+      "name": "Garden Mat",
       "description": "Full description of project 2. Detailed information about the development process, technologies used and results obtained."
     },
     "project3": {
       "name": "Project 3",
-      "description": "Full description of project 2. Detailed information about the development process, technologies used and results obtained."
+      "description": "Full description of project 3. Detailed information about the development process, technologies used and results obtained."
     },
     "project4": {
       "name": "Project 4",
-      "description": "Full description of project 2. Detailed information about the development process, technologies used and results obtained."
+      "description": "Full description of project 4. Detailed information about the development process, technologies used and results obtained."
+    },
+    "project5": {
+      "name": "Project 5",
+      "description": "Full description of project 5. Detailed information about the development process, technologies used and results obtained."
+    },
+    "project6": {
+      "name": "Project 6",
+      "description": "Full description of project 6. Detailed information about the development process, technologies used and results obtained."
+    },
+    "project7": {
+      "name": "Project 7",
+      "description": "Full description of project 7. Detailed information about the development process, technologies used and results obtained."
+    },
+    "project8": {
+      "name": "Project 8",
+      "description": "Full description of project 8. Detailed information about the development process, technologies used and results obtained."
+    },
+    "project9": {
+      "name": "Project 9",
+      "description": "Full description of project 9. Detailed information about the development process, technologies used and results obtained."
+    },
+    "project10": {
+      "name": "Project 10",
+      "description": "Full description of project 10. Detailed information about the development process, technologies used and results obtained."
+    },
+    "project11": {
+      "name": "Project 11",
+      "description": "Full description of project 11. Detailed information about the development process, technologies used and results obtained."
     },
     "viewMore": "View More",
+    "viewLink": "View the live project here: ",
     "noProjects": "No projects found"
   },
   "about": {
-    "title": "About Us",
-    "description": "We are a team of professional developers with experience in creating complex web applications",
-    "mission": "Our Mission",
-    "missionText": "To create innovative solutions that help businesses grow and evolve",
-    "values": {
-      "title": "Our Values",
-      "innovation": "Innovation",
-      "quality": "Quality",
-      "reliability": "Reliability"
+    "title": "Resume",
+    "description": {
+      "p1": "An experienced web developer-layout designer with a deep understanding of modern front-end development technologies. I specialize in creating responsive, cross-browser and high-performance websites and applications.",
+      "p2": "I have experience working with various CMS and frameworks, including Shopware, WordPress, Joomla, OpenCart, Vue, Bootstrap, JQuery, as well as modern styling tools such as Tailwind and SCSS. I can create complex animations using JS, CSS, Vue and SVG. I have extensive experience working with website builders such as Elementor and Tilda, and others. I can quickly find solutions to complex problems using artificial intelligence. I strive to create high-quality and semantically correct code.",
+      "p3": "Always ready to learn new technologies and constantly develop. Prevailing qualities: responsibility and attention to detail, ability to work in a team and independently."
     }
   },
   "history": {
-    "title": "Свяжитесь с нами",
-    "description": "У вас есть вопросы? Мы будем рады помочь!"    
+    "title": "Contact Us",
+    "description": "Have questions? We'd love to help!"    
   },
   "contact": {
     "title": "Contact Us",

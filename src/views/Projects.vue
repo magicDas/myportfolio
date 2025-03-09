@@ -1,8 +1,6 @@
 <template>
   <div class="content">
-    <h1 class="text-3xl font-bold text-center text-white dark:text-white mb-8">
-      {{ $t('projects.title') }}
-    </h1>
+    <h1 class="text-4xl font-heading mb-8 text-center">{{ $t('projects.title') }}</h1>
 
     <div class="relative overflow-hidden px-4">      
       <div class="flex transition-transform duration-500 ease-in-out gap-4" 
@@ -16,8 +14,8 @@
                 <img 
                   :src="project.image" 
                   :alt="$t(project.name)" 
-                  class="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-110" />
-                <div class="p-6 py-1">
+                  class="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-110" />
+                <div class="p-6 py-1 bg-orange-500">
                   <h3 class="text-xl font-bold mb-2">{{ $t(project.name) }}</h3>
                 </div>
 
@@ -34,7 +32,7 @@
                     class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg
                           transform transition-transform hover:scale-105"
                   >
-                    {{ $t('projects.readMore') }}
+                    {{ $t('projects.viewMore') }}
                   </button>
                 </div>
               </div>
@@ -76,9 +74,9 @@ const router = useRouter()
 const currentIndex = ref(0)
 
 // Функция для создания краткого описания
-const createShortDescription = (fullDescription) => {
-  const words = fullDescription.split(' ')
-  if (words.length <= 10) return fullDescription
+const createShortDescription = (description) => {
+  const words = description.split(' ')
+  if (words.length <= 10) return description
   return words.slice(0, 10).join(' ') + '...'
 }
 
@@ -87,26 +85,68 @@ const projects = ref([
     id: 1,
     name: 'projects.project1.name',
     description: 'projects.project1.description',
-    image: 'https://images.unsplash.com/photo-1642132652798-ae887edb9e9d',
+    image: './src/assets/images/mainpages/project1.jpg'
   },
   {
     id: 2,
     name: 'projects.project2.name',
     description: 'projects.project2.description',
-    image: 'https://images.unsplash.com/photo-1548524238-a971a4a3b523',
+    image: './src/assets/images/mainpages/project2.jpg'
   },
   {
     id: 3,
     name: 'projects.project3.name',
     description: 'projects.project3.description',
-    image: 'https://images.unsplash.com/photo-1642132652860-471b4228023e',
+    image: './src/assets/images/mainpages/project3.jpg'
   },
   {
     id: 4,
     name: 'projects.project4.name',
     description: 'projects.project4.description',
-    image: 'https://images.unsplash.com/photo-1615986201152-7686a4867f30',
+    image: './src/assets/images/mainpages/project4.jpg'
   },
+  {
+    id: 5,
+    name: 'projects.project5.name',
+    description: 'projects.project5.description',
+    image: './src/assets/images/mainpages/project5.jpg'
+  },
+  {
+    id: 6,
+    name: 'projects.project6.name',
+    description: 'projects.project6.description',
+    image: './src/assets/images/mainpages/project6.jpg'
+  },
+  {
+    id: 7,
+    name: 'projects.project7.name',
+    description: 'projects.project7.description',
+    image: './src/assets/images/mainpages/project7.jpg'
+  },
+  {
+    id: 8,
+    name: 'projects.project8.name',
+    description: 'projects.project8.description',
+    image: './src/assets/images/mainpages/project8.jpg'
+  },
+  {
+    id: 9,
+    name: 'projects.project9.name',
+    description: 'projects.project9.description',
+    image: './src/assets/images/mainpages/project9.jpg'
+  },
+  {
+    id: 10,
+    name: 'projects.project10.name',
+    description: 'projects.project10.description',
+    image: './src/assets/images/mainpages/project10.jpg'
+  },
+  {
+    id: 11,
+    name: 'projects.project11.name',
+    description: 'projects.project11.description',
+    image: './src/assets/images/mainpages/project11.jpg'
+  }
 ])
 
 const nextSlide = () => {

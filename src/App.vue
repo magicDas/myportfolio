@@ -1,28 +1,40 @@
 <template>
-  <div class="min-h-screen font-playfair">
+  <div class="app-container">
     <router-view></router-view>
   </div>
 </template>
 
 <style>
-body {
-  @apply font-playfair text-lg font-medium;
-  /* @apply font-crimson text-lg; */
+.app-container {
+  @apply min-h-screen bg-gradient-to-br from-gray-900 to-purple-900;
 }
 
-h1 {
-  @apply font-cinzel font-bold text-shadow-magical-lg tracking-wider;
+.nav-link {
+  @apply font-heading text-white hover:text-purple-300 transition-colors duration-300;
 }
 
-h2, h3, h4 {
-  @apply font-philosopher font-semibold tracking-wide;
+.nav-link.router-link-active {
+  @apply text-purple-400;
 }
 
-p, .magical-text {
-  @apply font-cinzel tracking-wider text-shadow-magical;
+.content {
+  @apply py-8 px-4;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading;
+}
+
+p {
+  @apply font-body;
+}
+
+.text-gradient {
+  @apply bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent;
+}
+
 .magical-button {
-  @apply relative px-6 py-2 font-bold font-cinzel
+  @apply relative px-6 py-2 font-bold
          text-white rounded-lg
          bg-gradient-to-r from-purple-600 via-fuchsia-500 to-purple-600
          bg-[length:200%_100%] animate-gradient
@@ -44,6 +56,7 @@ p, .magical-text {
                 inset 0 0 20px rgba(233, 213, 255, 0.8);
   }
 }
+
 @keyframes glow {
   0%, 100% {
     text-shadow: 0 0 10px rgba(233, 213, 255, 0.5);

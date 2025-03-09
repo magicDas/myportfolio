@@ -1,11 +1,10 @@
 <template>
-  <!--header class="bg-purple-900 text-white py-4 dark:bg-gray-900"-->
   <header class="text-white py-4">
     <div class="container mx-auto flex justify-between items-center px-4">
-      <!--<router-link to="/" class="text-2xl font-bold">MagicDas</router-link>-->
-      <div class="flex items-center space-x-4">
-        <AnimatedLogo :size="48" class="hover:scale-110 transition-transform" />
-        <!--<span class="text-xl font-bold">MagicDas</span>-->
+      <div class="logo-container flex items-center space-x-4">
+        <router-link to="/">
+          <AnimatedLogo :size="48" class="logo-main hover:scale-110 transition-transform" />
+        </router-link>
       </div>
       <nav class="hidden md:flex space-x-6">
         <router-link
@@ -97,6 +96,18 @@ import AnimatedLogo from '@/components/AnimatedLogo.vue'
 </script>
 
 <style scoped>
+header {
+  padding-bottom: 50px;
+}
+.logo-container {
+  position: relative;
+  width: 240px;
+}
+.logo-main {
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
 .nav-link.router-link-active {
   @apply text-purple-200 text-shadow-magical;
 }
