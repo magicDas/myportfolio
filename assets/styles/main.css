@@ -9,16 +9,7 @@
 /* body {
     overflow: hidden;
 } */
-#flashlight {
-    position: absolute;
-    width: 170px;
-    height: 150px;
-    border-radius: 50%; 
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.5),60%, rgba(255, 255, 255,0));
-    filter: blur(30px);
-    box-shadow: 0 0 100px rgba(255, 255, 255, 0.5);
-    pointer-events: none;
-}
+
 @layer base {
 
    :root {
@@ -26,31 +17,29 @@
        text-rendering: optimizeLegibility;
        -webkit-font-smoothing: antialiased;
        -moz-osx-font-smoothing: grayscale;
-     }
-    
-     /* Стили для ссылок */
-     a {
-       @apply font-medium text-purple-400 no-underline transition-colors;
-     }
-     
-     a:hover {
-       @apply text-purple-300;
-     }
-    
-     /* Базовые стили для кнопок */
-     button {
-       @apply rounded-lg border border-transparent px-4 py-2 text-base font-medium 
-             bg-purple-600 cursor-pointer transition-colors;
-     }
-     
-     button:hover {
-       @apply border-purple-400;
-     }
-     
-     button:focus,
-     button:focus-visible {
-       @apply outline-none ring-2 ring-purple-400;
-     }
+     }    
+  
+  a {
+    @apply font-medium text-purple-400 no-underline transition-colors;
+  }
+  
+  a:hover {
+    @apply text-purple-300;
+  }    
+
+  button {
+    @apply rounded-lg border border-transparent px-4 py-2 text-base font-medium 
+          bg-purple-600 cursor-pointer transition-colors;
+  }
+  
+  button:hover {
+    @apply border-purple-400;
+  }
+  
+  button:focus,
+  button:focus-visible {
+    @apply outline-none ring-2 ring-purple-400;
+  }
 
   * {
     scrollbar-width: thin;
