@@ -78,6 +78,9 @@
     @apply min-h-screen;
   }
 
+  .main {
+    padding: 0 !important;
+  }
 
   .bg-light {
     background: radial-gradient(#9333ea, #4c1d95, #1e1b4b, #131313);
@@ -107,11 +110,5 @@
   .fade-enter-from,
   .fade-leave-to {
     opacity: 0;
-  }
-
-  .animated-element {
-    will-change: transform;
-    transform: translateZ(0);
-    backface-visibility: hidden;
   }
 } 
