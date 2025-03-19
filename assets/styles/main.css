@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400&family=Rubik+Distressed&display=swap');
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities; 
-
-
-/* body {
-    overflow: hidden;
-} */
 
 @layer base {
 
@@ -43,28 +37,48 @@
 
   * {
     scrollbar-width: thin;
-    scrollbar-color: theme('colors.purple.600') theme('colors.gray.200');
+    scrollbar-color: #6b21a8 transparent;
   }
 
   *::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
+    width: 3px;
+    height: 3px;
   }
 
   *::-webkit-scrollbar-track {
-    @apply bg-gray-200 rounded-full;
+    background-color: transparent;
   }
 
   *::-webkit-scrollbar-thumb {
-    @apply bg-purple-600 rounded-full;
+    background-color: #6b21a8; 
+    border-radius: 3px;
   }
 
   *::-webkit-scrollbar-thumb:hover {
-    @apply bg-purple-700;
+    background-color: #5b21b6; 
+  }
+
+  *::-webkit-scrollbar-button {
+    opacity: 0;
+    display: none !important;
+  }
+
+  html, body {
+    overflow: hidden;
+    margin: 0;
   }
   body {
-    @apply text-white overflow-hidden;
+    min-width: 400px
   }
+
+  @media (max-width: 400px) {
+    body {
+        transform: scale(calc(100vw / 400));
+        transform-origin: top left;
+        width: 400px;
+        height: auto;
+    }
+}
 
   body:not(.dark) {
     @apply bg-light;
@@ -74,18 +88,16 @@
     @apply bg-dark;
   }
 
-  #app {
-    @apply min-h-screen;
-  }
+  /* #app {
+    @apply min-h-screen m-0;
+  } */
 
-  .main {
-    padding: 0 !important;
+  .bg-light, .bg-dark  {
+    animation: gradient 25s ease infinite;
   }
 
   .bg-light {
-    background: radial-gradient(#9333ea, #4c1d95, #1e1b4b, #131313);
-    background-size: 400% 400%;
-    animation: gradient 25s ease infinite;
+    background: radial-gradient(#131313, #1e1b4b, #4c1d95,#9333ea);    
   }
   .fade-enter-active,
   .fade-leave-active {
@@ -96,11 +108,9 @@
   .fade-leave-to {
     opacity: 0;
   }
-
+ 
   .bg-dark {
-    background: radial-gradient(#131313, #1e1b4b, #4c1d95,#9333ea);
-    background-size: 400% 400%;
-    animation: gradient 25s ease infinite;
+    background: radial-gradient(#9333ea, #4c1d95, #1e1b4b, #131313);
   }
   .fade-enter-active,
   .fade-leave-active {
