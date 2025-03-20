@@ -64,8 +64,7 @@
   }
 
   html, body {
-    overflow: hidden;
-    margin: 0;
+    @apply md:overflow-hidden m-0;
   }
   body {
     min-width: 400px
