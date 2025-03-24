@@ -87,9 +87,6 @@
     @apply bg-dark;
   }
 
-  /* #app {
-    @apply min-h-screen m-0;
-  } */
 
   .bg-light, .bg-dark  {
     animation: gradient 25s ease infinite;
