@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400&family=Rubik+Distressed&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+@layer base {
+
+   :root {
+       font-synthesis: none;
+       text-rendering: optimizeLegibility;
+       -webkit-font-smoothing: antialiased;
+       -moz-osx-font-smoothing: grayscale;
+     }    
+  
+  a {
+    @apply font-medium text-purple-400 no-underline transition-colors;
+  }
+  
+  a:hover {
+    @apply text-purple-300;
+  }    
+
+  button {
+    @apply rounded-lg border border-transparent px-4 py-2 text-base font-medium 
+          bg-purple-600 cursor-pointer transition-colors;
+  }
+  
+  button:hover {
+    @apply border-purple-400;
+  }
+  
+  button:focus,
+  button:focus-visible {
+    @apply outline-none ring-2 ring-purple-400;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #6b21a8 transparent;
+  }
+
+  *::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #6b21a8; 
+    border-radius: 3px;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #5b21b6; 
+  }
+
+  *::-webkit-scrollbar-button {
+    opacity: 0;
+    display: none !important;
+  }
+
+  html, body {
+    @apply md:overflow-hidden m-0;
+  }
+  body {
+    min-width: 400px
+  }
+
+  @media (max-width: 400px) {
+    body {
+        transform: scale(calc(100vw / 400));
+        transform-origin: top left;
+        width: 400px;
+        height: auto;
+    }
+}
+
+  body:not(.dark) {
+    @apply bg-light;
+  }
+
+  body.dark {
+    @apply bg-dark;
+  }
+
+
+  .bg-light, .bg-dark  {
+    animation: gradient 25s ease infinite;
+  }
+
+  .bg-light {
+    background: radial-gradient(#131313, #1e1b4b, #4c1d95,#9333ea);    
+  }
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.5s ease;
+  }
+
+  .fade-enter-from,
+  .fade-leave-to {
+    opacity: 0;
+  }
+ 
+  .bg-dark {
+    background: radial-gradient(#9333ea, #4c1d95, #1e1b4b, #131313);
+  }
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.5s ease;
+  }
+
+  .fade-enter-from,
+  .fade-leave-to {
+    opacity: 0;
+  }
+} 
